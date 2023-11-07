@@ -1,0 +1,13 @@
+Landing page was created on using:
+1. HTML
+2. Flexbox 
+3. Bootstrap:
+    3.1. Grid Layout 
+    3.2. Reboot css to reset stardard browser styles
+4. Sass compiler(compiling sass files to css using Live Sass Compiler from VSCode Extensions)
+5. Added fonts from google fonts cdn server
+6. Pseudo classes and elements in css
+7. Mixins and variables
+8. Icon fonts from fontawesome.com
+9. Adapting projects for mobile and tablets
+10. JavaScript for burger menu(mobile version)
