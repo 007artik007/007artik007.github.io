@@ -1,0 +1,4 @@
+Landing page was created on pur HTML and CSS using:
+1. Flexbox 
+2. Added normalize.css to reset every browser included styles from cdn servers
+3. Added fonts from google fonts
