@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Welcome group</title>
+	<link rel="icon" href="welcome.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="main.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<link
+	  rel="stylesheet"
+	  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+	  integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+	  crossorigin="anonymous"
+	  referrerpolicy="no-referrer"
+	/>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<meta
+	  name="keywords"
+	  content="samochody z usa. samochody z europy. dostawa samochodów. salon samochodowy. skup samochodów. giełda samochodowa. odprawa celna samochodów. dostawa samochodów z usa. samochody na aukcjach"
+	/>
+
+	<link
+	  href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+	  rel="stylesheet"
+	/>
+	<script
+	  src="https://code.jquery.com/jquery-3.6.3.min.js"
+	  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+	  crossorigin="anonymous"
+	></script>
+	<script
+	  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+	  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+	  crossorigin="anonymous"
+	  referrerpolicy="no-referrer"
+	></script>
+  </head>
+  <body>
+	<div class="global-load">
+	  <img
+		id="loader-img"
+		class="logo"
+		src="white-logo-w.e.l.c.o.m.e.png"
+		alt="w.e.l.c.o.m.e.group"
+	  />
+	</div>
+	<div class="container">
+		<button data-modal class="send animated active">
+			<img src="message.png" alt="message">
+		</button>
+	  <div class="section1">
+		<header class="header">
+			<nav data-nav class="">
+				<img class="logo-nav" src="white-logo-w.e.l.c.o.m.e.png" alt="w.e.l.c.o.m.e.group"/>
+				<ul class="list-menu">
+					<li class="list-item"><a href="#" class="list-link">Strona glówna</a></li>
+					<li class="list-item"><a href="#about" class="list-link">O nas</a></li>
+					<li class="list-item"><a href="#advantages" class="list-link">Nasze zalety</a></li>
+					<li class="list-item"><a href="#" class="list-link"></a></li>
+					<li class="list-item"><a href="#" data-modal class="list-link">Napisz do nas</a></li>
+					<li class="list-item list-item-contacts"><a data-contacts class="list-link">Kontakt</a></li>
+					<li class="social-media">
+						<a href="https://www.instagram.com/" target="_blank">
+							<img src="instagram.png" alt="instagram" />
+						</a>
+						<a href="https://www.facebook.com/" target="_blank">
+							<img src="Facebook.png" alt="facebook" />
+						</a>
+						<a href="tel:+48111111111" class="instagram">
+							<img src="telephone-symbol-button.png" alt="phone" />
+						</a>
+					</li>
+				</ul>
+				<div class="modal-contacts hide">
+					<span class="close">&#10006;</span>
+					<span>Telefon <a href="tel:+48111111111">+48111111111</a></span>
+					<span>Email: <a href="mailto:example@mail.pl" type="email">example@mail.pl</a></span>
+				</div>
+			</nav>
+			<div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+		</header>
+		<img
+		  class="logo"
+		  src="white-logo-w.e.l.c.o.m.e.png"
+		  alt="w.e.l.c.o.m.e.group"
+		/>
+		<div class="about-us">
+		  <div class="text">
+			<h1>
+			  W.E.L.C.O.M.E. - najlepszy wybór Twojego przyszłego samochodu!
+			</h1>
+		  </div>
+		  <div class="carousel-wrp">
+			<div class="owl-carousel">
+			  <div>
+				<div class="car-item">
+				  <div class="car-img">
+					<img src="imges/bmw328.png" alt="" />
+				  </div>
+				  <div class="brand">BMW 3 Series</div>
+				  <div class="price">
+				  	Cena pod klucz od <span>10 000 $</span>
+				  </div>
+				  <div class="ua-price">
+					Cena w Polsce od <span>13 000 $</span>
+				  </div>
+				  <button class="scrollToContact">Wybrać samochód</button>
+				</div>
+			  </div>
+			  <div>
+				<div class="car-item">
+				  <div class="car-img">
+					<img src="imges/audia4.png" alt="" />
+				  </div>
+				  <div class="brand">Audi A4</div>
+				  <div class="price">
+				  	Cena pod klucz od <span>10 000 $</span>
+				  </div>
+				  <div class="ua-price">
+				  	Cena w Polsce od <span>15 000 $</span>
+				  </div>
+				  <button class="scrollToContact">Wybrać samochód</button>
+				</div>
+			  </div>
+			  <div>
+				<div class="car-item">
+				  <div class="car-img">
+					<img src="imges/camry.png" alt="" />
+				  </div>
+				  <div class="brand">toyota camry</div>
+				  <div class="price">
+				  	Cena pod klucz od <span>13 000 $</span>
+				  </div>
+				  <div class="ua-price">
+				  	Cena w Polsce od <span>17 00 $</span>
+				  </div>
+				  <button class="scrollToContact">Wybrać samochód</button>
+				</div>
+			  </div>
+			  <div>
+				<div class="car-item">
+				  <div class="car-img">
+					<img src="imges/leaf.png" alt="" />
+				  </div>
+				  <div class="brand">Nissan leaf</div>
+				  <div class="price">
+				  	Cena pod klucz od <span>8 000 $</span>
+				  </div>
+				  <div class="ua-price">
+				  	Cena w Polsce od <span>12 000 $</span>
+				  </div>
+				  <button class="scrollToContact">Wybrać samochód</button>
+				</div>
+			  </div>
+			  <div>
+				<div class="car-item">
+				  <div class="car-img">
+					<img src="imges/passat.png" alt="" />
+				  </div>
+				  <div class="brand">vw passat</div>
+				  <div class="price">
+				  	Cena pod klucz od <span>9 000 $</span>
+				  </div>
+				  <div class="ua-price">
+				  	Cena w Polsce od <span>13 000 $</span>
+				  </div>
+				  <button class="scrollToContact">Wybrać samochód</button>
+				</div>
+			  </div>
+			  <div>
+				<div class="car-item">
+				  <div class="car-img">
+					<img src="imges/tuscan.png" alt="" />
+				  </div>
+				  <div class="brand">hyundai tucson</div>
+				  <div class="price">
+				  	Cena pod klucz od <span>16 000 $</span>
+				  </div>
+				  <div class="ua-price">
+				  	Cena w Polsce od <span>25 000 $</span>
+				  </div>
+				  <button class="scrollToContact">Wybrać samochód</button>
+				</div>
+			  </div>
+			  <div>
+				<div class="car-item">
+				  <div class="car-img">
+					<img src="imges/rogue.png" alt="" />
+				  </div>
+				  <div class="brand">nissan rogue</div>
+				  <div class="price">
+				  	Cena pod klucz od <span>9 000 $</span>
+				  </div>
+				  <div class="ua-price">
+				  	Cena w Polsce od <span>13 000 $</span>
+				  </div>
+				  <button class="scrollToContact">Wybrać samochód</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="actions">
+			<button class="scrollToContact">Wybrać samochód</button>
+		  <div class="contact-buttons">
+			<div>
+			  <a
+				href="https://www.instagram.com/"
+				target="_blank"
+			  >
+				<img src="instagram.png" alt="" />
+			  </a>
+			  <a href="tel:+48111111111">
+				<img src="telephone-symbol-button.png" alt="" />
+			  </a>
+			</div>
+			<div>
+			  <a class="phone-link" href="tel:+48111111111"
+				>+48111111111</a
+			  >
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div id="about" class="section4 container-pd">
+		<div class="section-header">
+		  <span>O nas</span>
+		  <h2>Salon samochodowy "W.E.L.C.O.M.E"</h2>
+		  <div class="line"></div>
+		  <p>W.E.L.C.O.M.E. - najlepszy wybór Twojego przyszłego samochodu</p>
+		</div>
+		<div class="info-section-2">
+		  <div class="info">
+			<div class="info-text">
+			  <h4>Wyszukiwanie oraz dostawa samochodów z USA</h4>
+			  <div class="line"></div>
+			  <p>
+			  	Profesjonalny dobór oraz dostawa samochodów z USA i Europy
+			  </p>
+			</div>
+			<img src="imges/1.png" alt="" />
+		  </div>
+		  <div class="info">
+			<div class="info-text">
+			  <h4>Samochody na stanie</h4>
+			  <div class="line"></div>
+			  <p>
+			  	Mamy w magazynie samochody, które są w pełni gotowe
+			  	do codziennego użytku. U nas możesz wymienić, kupić lub
+			  	sprzedać samochód
+			  </p>
+			</div>
+			<img src="imges/2.png" alt="" />
+		  </div>
+		  <div class="info">
+			<div class="info-text">
+			  <h4>Pełne wsparcie klienta</h4>
+			  <div class="line"></div>
+			  <p>
+				Będziesz miał do dyspozycji osobistego, wysoko wykwalifikowanego specjalistę, który
+			  	będzie w kontakcie z Tobą 24/7 i zapewni wszystkie niezbędne
+			  	informacje i monitorowanie dostawy samochodu na wszystkich etapach
+			  </p>
+			</div>
+			<img src="imges/4.png" alt="" />
+		  </div>
+		  <div class="info">
+			<div class="info-text">
+			  <h4>Odprawa celna oraz pomoc przy akcyzie</h4>
+			  <div class="line"></div>
+			  <p>
+			  	Świadczymy usługi:<br />
+			  	- odprawa celna twojego samochodu;<br />
+			  	- pomoc przy akcyzie.<br />
+			  </p>
+			</div>
+			<img src="imges/7.png" alt="" />
+		  </div>
+		</div>
+	  </div>
+	  <div id="advantages" class="section2 container-pd">
+		<div class="section-header">
+		  <span>Zalety</span>
+		  <h2>"W.E.L.C.O.M.E"</h2>
+		</div>
+		<div class="info-section">
+		  <div class="info">
+			<img class="img-icon" src="icons/security.png" alt="" />
+			<div class="line"></div>
+			<h4>Bezpiecznie</h4>
+			<p>
+			  Pracujemy na podstawie umowy dwustronnej. Płatność dokonywana jest "bezpośrednio",
+			  bezpośrednio do aukcji. Skupujemy samochody wyłącznie z ubezpieczeń
+			  firmy
+			</p>
+		  </div>
+		  <div class="info">
+			<img class="img-icon" src="icons/speedometer.png" alt="" />
+			<div class="line"></div>
+			<h4>Szybko</h4>
+			<p>
+			  Mamy dostęp do informacji o zatłoczeniu portów online
+			  trybem, wybierając najszybsze trasy dostaw
+			</p>
+		  </div>
+		  <div class="info">
+			<img class="img-icon" src="icons/piggy-bank.png" alt="" />
+			<div class="line"></div>
+			<h4>Ekonomicznie</h4>
+			<p>
+			  Otrzymujesz samochód w cenie wskazanej w kalkulacji:
+			  Pokrywamy ewentualne nadpłaty za przechowywanie i
+			  opóźnienia. Wybieramy najkorzystniejsze sposoby dostarczenia Twojego samochodu
+			</p>
+		  </div>
+		  <div class="info">
+			<img class="img-icon" src="icons/repair-tool.png" alt="" />
+			<div class="line"></div>
+			<h4>Naprawa</h4>
+			<p>
+			  Posiadamy 5 partnerskich stacji serwisowych (serwis i naprawa poza godzinami pracy
+			  samochodu). Przeprowadzamy kontrolę wad online. Ty
+			  zawsze możesz dowiedzieć się o stanie swojego samochodu dzięki nagraniu wideo
+			</p>
+		  </div>
+		  <div class="info">
+			<img class="img-icon" src="icons/transfer.png" alt="" />
+			<div class="line"></div>
+			<h4>Wymiana/odkup</h4>
+			<p>
+			  Oferujemy przyjemne ceny. Możesz wymienić swój samochód na samochód z
+			  dostępność lub wybrać samochód do zamówienia
+			</p>
+		  </div>
+		</div>
+	  </div>
+	  <div id="contact" class="section3 container-pd">
+		<div class="section-header">
+		  <span>Kontakt</span>
+		  <h2>"W.E.L.C.O.M.E"</h2>
+		  <div class="line"></div>
+		  <p>
+		  	Złożenie wniosku do niczego nie zobowiązuje. Skontaktujemy się z Tobą,
+		  	przeprowadzimy konsultacje, a ostateczna decyzja należy do Ciebie.
+		  </p>
+		</div>
+		<div id="wrapper">
+		  <div class="machine-border">
+			<div id="machine-wrapper" class="inner-shadow">
+			  <div id="machine" class="scanlines">
+				<div id="slot1" class="slot" data="1">
+				  <div class="scene">
+					<div id="slots" class="carousel">
+					  <div class="carousel__cell" data="1">
+						<img src="white-logo-w.e.l.c.o.m.e.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="2">
+						<img src="imges/2.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="3">
+						<img src="imges/4.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="4">
+						<img src="imges/1.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="5">
+						<img src="white-logo-w.e.l.c.o.m.e.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="6">
+						<img src="imges/7.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="7">
+						<img src="imges/8.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="8">
+						<img src="imges/1.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="9">
+						<img src="imges/2.png" alt="" />
+					  </div>
+					</div>
+				  </div>
+				</div>
+
+				<div id="slot2" class="slot" data="2">
+				  <div class="scene">
+					<div id="slots" class="carousel">
+					  <div class="carousel__cell" data="1">
+						<img src="white-logo-w.e.l.c.o.m.e.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="2">
+						<img src="imges/2.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="3">
+						<img src="imges/4.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="4">
+						<img src="imges/1.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="5">
+						<img src="white-logo-w.e.l.c.o.m.e.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="6">
+						<img src="imges/7.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="7">
+						<img src="imges/8.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="8">
+						<img src="imges/1.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="9">
+						<img src="imges/2.png" alt="" />
+					  </div>
+					</div>
+				  </div>
+				</div>
+
+				<div id="slot3" class="slot" data="3">
+				  <div class="scene">
+					<div id="slots" class="carousel">
+					  <div class="carousel__cell" data="1">
+						<img src="white-logo-w.e.l.c.o.m.e.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="2">
+						<img src="imges/2.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="3">
+						<img src="imges/4.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="4">
+						<img src="imges/1.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="5">
+						<img src="white-logo-w.e.l.c.o.m.e.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="6">
+						<img src="imges/7.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="7">
+						<img src="imges/8.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="8">
+						<img src="imges/1.png" alt="" />
+					  </div>
+					  <div class="carousel__cell" data="9">
+						<img src="imges/2.png" alt="" />
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- border -->
+
+		  <div id="controls" class="imges-controls">
+			<div>Spróbuj wygrać nagrodę</div>
+			<img id="scroll" src="icons/slot-machine.png" alt="" />
+			<br />
+		  </div>
+		  <div id="result"></div>
+		</div>
+		<div class="contact-form" id="form">
+		  <input id="name" type="text" placeholder="Imię" />
+		  <input id="number" type="text" placeholder="Numer telefonu" />
+		  <button id="sendButton">Wyśli wniosek</button>
+		  <div id="form-error" class="form-error"></div>
+		</div>
+		<div class="form-send-success">
+			<img src="icons/email.png" />
+			Twoje zgłoszenie zostało wysłane! Specjalista ds. sprzedaży skontaktuje się z Tobą w najbliższym czasie!!
+			<br />
+			Dziękujemy za wybranie "W.E.L.C.O.M.E"
+		</div>
+		<div class="actions">
+		  <div class="contact-buttons">
+			<div>
+			  <a class="phone-link" <a href="tel:+48111111111"> +48111111111</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <section class="footer">
+		<ul class="footer-menu">
+			<li class="footer-items"><a class="footer-link"><img class="logo-footer" src="white-logo-w.e.l.c.o.m.e.png" alt="w.e.l.c.o.m.e.group"/></a></li>
+			<li class="footer-items"><a class="footer-link">W.E.L.C.O.M.E</a></li>
+			<li class="footer-items"><a class="footer-link">Import pojazdów z USA, Kanady oraz Europy</a></li>
+			<li class="footer-items"><a class="footer-link">NIP: 9999999999</a></li>
+			<li class="footer-items"><a href="tel:+48111111111" class="footer-link phone">Tel: +48111111111</a></li>
+			<li class="footer-items"><a class="footer-link"></a>E-mail: example@mail.pl</li>
+			<li class="social-media">
+				<a href="https://www.instagram.com/" target="_blank" >
+					<img src="instagram.png" alt="instagram"/>
+				</a>
+				<a href="https://www.facebook.com" target="_blank">
+					<img src="Facebook.png" alt="facebook"/>
+				</a>
+				<a href="tel:+48111111111" class="instagram">
+					<img src="telephone-symbol-button.png" alt="phone"/>
+				</a>
+			</li>
+		</ul>
+	  </section>
+
+	  <div class="modal hide">
+		<div class="modal-block">
+			<h3>Wypełnij formularz</h3>
+			<div class="contact-form" id="form2">
+				<input id="name2" type="text" placeholder="Imię " />
+				<input id="number2" type="text" placeholder="Numer telefonu" />
+				<input id="email" type="email" placeholder="E-mail" />
+				<button id="sendButton2">Wyśli wniosek</button>
+				<div id="form-error2" class="form-error"></div>
+			</div>
+			<span data-close>&#10006</span>
+		</div>
+	  </div>
+	</div>
+
+	<script>
+	  var results = [
+		"Niestety nic nie wygrałeś, ale mamy dla Ciebie system rabatowy.Zostaw zgłoszenie i poznaj warunki.",
+		"GRATULACJE! Twoja wygrana!  Czyszczenie samochodu!  Wykorzystaj swoją wygraną zostawiając zgłoszenie!",
+		"Niestety nic nie wygrałeś, ale mamy dla Ciebie system rabatowy.Zostaw zgłoszenie i poznaj warunki.",
+		"GRATULACJE! Twoja wygrana!  Polerowanie samochodu!  Wykorzystaj swoją wygraną zostawiając zgłoszenie!",
+		"Niestety nic nie wygrałeś, ale mamy dla Ciebie system rabatowy.Zostaw zgłoszenie i poznaj warunki.",
+		"GRATULACJE! Twoja wygrana!  20 litrów paliwa!  Wykorzystaj swoją wygraną zostawiając zgłoszenie!",
+		"Niestety nic nie wygrałeś, ale mamy dla Ciebie system rabatowy.Zostaw zgłoszenie i poznaj warunki.",
+		"GRATULACJE! Twoja wygrana!  Olej do nowego samochodu!  Skorzystaj z wygranej zostawiając zgłoszenie!",
+		"Niestety nic nie wygrałeś, ale mamy dla Ciebie system rabatowy.Zostaw zgłoszenie i poznaj warunki.",
+		"GRATULACJE! Twoja wygrana!  Rabat na naprawę!  Skorzystaj z wygranej zostawiając zgłoszenie!",
+		"НNiestety nic nie wygrałeś, ale mamy dla Ciebie system rabatowy.Zostaw zgłoszenie i poznaj warunki.",
+		"GRATULACJE! Twoja wygrana!  Rabat na usługi!  Wykorzystaj swoją wygraną zostawiając zgłoszenie!",
+	  ];
+	  var number;
+	  var positions = {
+		9: 320,
+		8: 280,
+		7: 240,
+		6: 200,
+		5: 160,
+		4: 120,
+		3: 80,
+		2: 40,
+		1: 0,
+	  };
+
+	  var slots = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+	  var bonus = "";
+
+	  $("#scroll").on("click", function () {
+		$("#controls").text("Twoje wygrane ...");
+		bonus = "";
+		rollNumbers([
+		  slots[Math.floor(Math.random() * slots.length)],
+		  slots[Math.floor(Math.random() * slots.length)],
+		  slots[Math.floor(Math.random() * slots.length)],
+		]);
+		$("#scroll").hide();
+		if ($(".carousel").hasClass("is-animating")) {
+		  // for (i = 1; i <= 3; i++) {
+		  //   number = Math.floor(Math.random() * 9) + 1; // 1 to 9
+		  //   let element = $(".slot[data=" + i + "] .carousel");
+		  //   $(element).animateRotate(positions[number], {
+		  //     duration: 1000,
+		  //     easing: "ease-out",
+		  //     complete: function () {},
+		  //     step: function () {},
+		  //   });
+		  // }
+		} else {
+		  $(".carousel").toggleClass("is-animating");
+		  setTimeout(() => {
+			$(".carousel").toggleClass("is-animating");
+			$("#scroll").show();
+			bonus = results[Math.floor(Math.random() * results.length)];
+
+			$("#controls").addClass("victory");
+			$("#controls").text(`${bonus}`);
+		  }, 2000);
+		}
+	  });
+
+	  // Function to roll 3 at once
+	  // Call rollNumbers([1,2,3]) after event fires in contract
+	  function rollNumbers(numbers) {
+		let element;
+		let pos = 0;
+		for (i = 1; i <= 3; i++) {
+		  element = $(".slot[data=" + i + "] .carousel");
+		  $(element).animateRotate(positions[numbers[pos]], {
+			duration: 1000,
+			easing: "ease-out",
+		  });
+		  pos++;
+		}
+	  }
+
+	  // https://stackoverflow.com/a/15191130
+	  $.fn.animateRotate = function (angle, duration, easing, complete) {
+		return this.each(function () {
+		  var $elem = $(this);
+
+		  $({ deg: 0 }).animate(
+			{ deg: angle },
+			{
+			  duration: duration,
+			  easing: easing,
+			  step: function (now) {
+				$elem.css({
+				  transform: "rotateX(-" + now + "deg)",
+				});
+			  },
+			  complete: complete || $.noop,
+			}
+		  );
+		});
+	  };
+
+	  $(document).ready(function () {
+		$(".owl-carousel").owlCarousel({
+		  margin: 10,
+		  loop: true,
+		  autoWidth: true,
+		  items: 2,
+		});
+
+		$("body").css({ overflow: "hidden" });
+		$("#loader-img").toggleClass("animate-scale");
+
+		setTimeout(() => {
+		  $(".global-load").hide("slow");
+		  $("body").css({ overflow: "scroll" });
+		}, 3000);
+
+		// Calculate translateZ
+		var sceneHeight = $(".scene").height();
+		var cellSize = sceneHeight;
+		var numberOfCells = 9;
+		var tz = Math.round(cellSize / 2 / Math.tan(Math.PI / numberOfCells));
+
+		// Rotate and translate carousel cells
+		var count = 0;
+		for (i = 1; i <= 9; i++) {
+		  $(".carousel__cell:nth-child(" + i + ")").css({
+			transform: "rotateX(" + count + "deg) translateZ(" + tz + "px)",
+		  });
+		  count += 40;
+		}
+	  });
+
+	  // scroll
+	  $(".scrollToContact").click(function () {
+		$([document.documentElement, document.body]).animate(
+		  {
+			scrollTop: $("#contact").offset().top,
+		  },
+		  2000
+		);
+	  });
+
+	  // send lead
+
+	  const sendData = (data) => {
+		return axios({
+		  method: "post",
+		  url: "https://noda-fe3lvj2yrq-lm.a.run.app/send-lead",
+		  data: data,
+		});
+	  };
+
+	  $("#sendButton").on("click", function () {
+		// Wpisz swoje imię i nazwisko oraz numer telefonu
+		// form-error
+		let data = {
+		  name: $("#name").val(),
+		  number: $("#number").val(),
+		  casino: bonus ? bonus : "",
+		};
+		if (data.name && data.number) {
+		  $("#form-error").text("");
+		  $("#sendButton").attr("disabled", true);
+		  $("#sendButton").text("Wysyłam ...");
+		  sendData(data)
+			.then(() => {
+			  $("#form").hide();
+			  $(".form-send-success").css("display", "flex");
+			})
+			.catch(() => {
+			  $("#form-error").text(
+				"Ups... Coś nie działa, proszę spróbować ponownie lub napisać do nas na Instagramie!"
+			  );
+			})
+			.finally(() => {
+			  $("#sendButton").attr("disabled", false);
+			  $("#sendButton").text("Wyśli wniosek");
+			});
+		} else {
+		  $("#form-error").text("Wpisz swoje imię i nazwisko oraz numer telefonu!");
+		}
+	  });
+	</script>
+	<script src="js/script.js"></script>
+  </body>
+</html>
